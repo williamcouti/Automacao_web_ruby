@@ -1,0 +1,8 @@
+ #Ambiente de Pre-prod;
+ #url_Pre-prod: 'https://qualidade.gps-pamcary.com.br'
+
+ #Ambiente de Qualidade;
+ url_Qualidade: 'https://qualidade.gps-pamcary.com.br'
+
+
+

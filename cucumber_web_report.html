@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Cucumber Report Builder web automation test results</title>
+
+  <link rel="icon" href="https://reportbuilder.rajatthareja.com/rb.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+  <link href="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.9/css/report.builder.min.css" rel="stylesheet">
+
+  
+</head>
+
+  <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+<header class="brown lighten-5">
+  <div class="row brown lighten-1">
+    <div class="col m6 hide-on-small-only">
+      <h5 class="truncate white-text tooltipped" data-tooltip="Cucumber Report Builder web automation test results">Cucumber Report Builder web automation test results</h5>
+    </div>
+
+    <div class="col m6 s12 brown lighten-1">
+      <ul class="tabs brown lighten-1 row" style="overflow-x: hidden">
+        <li class="tab col s3">
+          <a class="brown lighten-3 active blue-text waves-effect waves-light tooltipped" data-tooltip="Results Overview" href="#overview"><i class="material-icons">assessment</i> Overview</a>
+        </li>
+        <li class="tab col s3">
+          <a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios by Features" href="#features"><i class="material-icons">view_headline</i> Features</a>
+        </li>
+        <li class="tab col s3">
+          <a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios Summary Table" href="#summary"><i class="material-icons">view_comfy</i> Summary</a>
+        </li>
+        <li class="tab col s3">
+          <a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Failed Scenarios" href="#errors"><i class="material-icons">bug_report</i> Errors</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+    
+
+    
+    
+
+    
+    
+        
+        <div id="g0f0s0" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+
+    <h5>Informar usúario e senha e Fazer login com sucesso (8.432s)</h5>
+    features/bdd/01_valida_login_sigs.feature:10
+
+    
+        
+            
+
+
+
+
+
+        
+            
+
+
+
+
+
+        
+            
+
+
+
+
+
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que eu informo meu usuario (0.602s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>E </b> eu informo minha senha (0.118s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Quando </b> eu clicar no botao entrar (5.015s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>Unable to find css &quot;input[value=\&quot;ENTRAR1\&quot;]&quot; (Capybara::ElementNotFound)
+./features/pages/01_valida_login_sigs.page.rb:24:in `userBtn&#39;
+./features/step_definitions/01_valida_login_sigs.rb:17:in `&quot;eu clicar no botao entrar&quot;&#39;
+features/bdd/01_valida_login_sigs.feature:14:in `eu clicar no botao entrar&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step skipped">
+  
+
+  <b>Então </b> verifico se o usuario logou com sucesso (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+
+
+    
+    
+    
+    <pre>undefined method `logs&#39; for #&lt;Selenium::WebDriver::Manager:0x073beb20 @bridge=#&lt;Selenium::WebDriver::Remote::Bridge:0x07336c98 @http=#&lt;Capybara::Selenium::PersistentClient:0x0733c428 @open_timeout=nil, @read_timeout=nil, @server_url=#&lt;URI::HTTP http://127.0.0.1:9515/&gt;, @proxy=nil, @http=#&lt;Net::HTTP 127.0.0.1:9515 open=true&gt;&gt;, @file_detector=nil, @session_id=&quot;7fa63ebd1724baa0de2ec4d4fb1ee7cd&quot;, @capabilities=#&lt;Selenium::WebDriver::Remote::Capabilities:0x07375290 @capabilities={:timeouts=&gt;{:implicit=&gt;0, :page_load=&gt;300000, :script=&gt;30000}, :browser_name=&gt;&quot;chrome&quot;, :browser_version=&gt;&quot;107.0.5304.106&quot;, :platform_name=&gt;&quot;windows&quot;, :accept_insecure_certs=&gt;false, :page_load_strategy=&gt;&quot;normal&quot;, :set_window_rect=&gt;true, :unhandled_prompt_behavior=&gt;&quot;dismiss and notify&quot;, :strict_file_interactability=&gt;false, &quot;chrome&quot;=&gt;{&quot;chromedriverVersion&quot;=&gt;&quot;106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569})&quot;, &quot;userDataDir&quot;=&gt;&quot;C:\\Users\\WILLIA~1\\AppData\\Local\\Temp\\scoped_dir15668_2057347172&quot;}, &quot;goog:chromeOptions&quot;=&gt;{&quot;debuggerAddress&quot;=&gt;&quot;localhost:57225&quot;}, &quot;networkConnectionEnabled&quot;=&gt;false, &quot;webauthn:extension:credBlob&quot;=&gt;true, &quot;webauthn:extension:largeBlob&quot;=&gt;true, &quot;webauthn:virtualAuthenticators&quot;=&gt;true}&gt;, @browser=:chrome, @manage=#&lt;Selenium::WebDriver::Manager:0x073beb20 ...&gt;, @atoms={:isDisplayed=&gt;&quot;(function(){function d(t,e,n){function r(t){var e=x(t);if(0&lt;e.height&amp;&amp;0&lt;e.width)return!0;if(\&quot;PATH\&quot;==t.tagName.toUpperCase()&amp;&amp;(0&lt;e.height||0&lt;e.width)){var n=window.getComputedStyle(t)[\&quot;stroke-width\&quot;];return!!n&amp;&amp;0&lt;parseInt(n,10)}return\&quot;hidden\&quot;!=window.getComputedStyle(t).overflow&amp;&amp;Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&amp;&amp;r(t)})}function i(t){return C(t)==T.HIDDEN&amp;&amp;Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\&quot;BODY\&quot;==o)return!0;if(\&quot;OPTION\&quot;==o||\&quot;OPTGROUP\&quot;==o){var a=c(t,function(t){return\&quot;SELECT\&quot;==t.tagName.toUpperCase()});return!!a&amp;&amp;d(a,!0,n)}var u=s(t);if(u)return!!u.image&amp;&amp;0&lt;u.rect.width&amp;&amp;0&lt;u.rect.height&amp;&amp;d(u.image,e,n);if(\&quot;INPUT\&quot;==o&amp;&amp;\&quot;hidden\&quot;==t.type.toLowerCase())return!1;if(\&quot;NOSCRIPT\&quot;==o)return!1;var l=window.getComputedStyle(t).visibility;return\&quot;collapse\&quot;!=l&amp;&amp;\&quot;hidden\&quot;!=l&amp;&amp;(!!n(t)&amp;&amp;(!(!e&amp;&amp;0==f(t))&amp;&amp;(!!r(t)&amp;&amp;!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\&quot;inline\&quot;)&amp;&amp;\&quot;contents\&quot;!=n&amp;&amp;(\&quot;absolute\&quot;!=r||\&quot;static\&quot;!=e.position)}var r=window.getComputedStyle(t).position;if(\&quot;fixed\&quot;==r)return i=!0,t==u?null:u;for(var n=D(t);n&amp;&amp;!e(n);)n=D(n);return n}function n(t){var e=t;if(\&quot;visible\&quot;==d)if(t==u&amp;&amp;l)e=l;else if(t==l)return{x:\&quot;visible\&quot;,y:\&quot;visible\&quot;};var n=window.getComputedStyle(e),r={x:n[\&quot;overflow-x\&quot;],y:n[\&quot;overflow-y\&quot;]};return t==u&amp;&amp;(r.x=\&quot;visible\&quot;==r.x?\&quot;auto\&quot;:r.x,r.y=\&quot;visible\&quot;==r.y?\&quot;auto\&quot;:r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\&quot;visible\&quot;!=h.x||\&quot;visible\&quot;!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right&lt;s.left,c=o.bottom&lt;s.top;if(p&amp;&amp;\&quot;hidden\&quot;==h.x||c&amp;&amp;\&quot;hidden\&quot;==h.y)return T.HIDDEN;if(p&amp;&amp;\&quot;visible\&quot;!=h.x||c&amp;&amp;\&quot;visible\&quot;!=h.y){var v=r(f),g=o.right&lt;s.left-v.x,w=o.bottom&lt;s.top-v.y;return g&amp;&amp;\&quot;visible\&quot;!=h.x||w&amp;&amp;\&quot;visible\&quot;!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left&gt;=s.left+s.width,m=o.top&gt;=s.top+s.height;if(N&amp;&amp;\&quot;hidden\&quot;==h.x||m&amp;&amp;\&quot;hidden\&quot;==h.y)return T.HIDDEN;if(N&amp;&amp;\&quot;visible\&quot;!=h.x||m&amp;&amp;\&quot;visible\&quot;!=h.y){if(i){var y=r(f);if(o.left&gt;=u.scrollWidth-y.x||o.right&gt;=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\&quot;HTML\&quot;==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&amp;&amp;(e=Number(n));var r=D(t);return r&amp;&amp;r.nodeType==Node.ELEMENT_NODE&amp;&amp;(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\&quot;,\&quot;);if(\&quot;rect\&quot;==e&amp;&amp;4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\&quot;circle\&quot;==e&amp;&amp;3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\&quot;poly\&quot;==e&amp;&amp;2&lt;n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1&lt;n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\&quot;MAP\&quot;==e;if(!n&amp;&amp;\&quot;AREA\&quot;!=e)return null;var r=n?t:\&quot;MAP\&quot;==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&amp;&amp;r.name&amp;&amp;((i=r.ownerDocument.querySelector(\&quot;*[usemap=&#39;#\&quot;+r.name+\&quot;&#39;]\&quot;))&amp;&amp;(o=x(i),!n&amp;&amp;\&quot;default\&quot;!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&amp;&amp;(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&amp;&amp;e.shadowRoot&amp;&amp;t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0&lt;n.length)return n[n.length-1]}return e}var T={NONE:\&quot;none\&quot;,HIDDEN:\&quot;hidden\&quot;,SCROLL:\&quot;scroll\&quot;};return function i(t,e){function n(t){if(\&quot;none\&quot;==window.getComputedStyle(t).display)return!1;var e=r(t);if(\&quot;function\&quot;==typeof ShadowRoot&amp;&amp;e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&amp;&amp;e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&amp;&amp;e.tagName&amp;&amp;\&quot;DETAILS\&quot;==e.tagName.toUpperCase()&amp;&amp;!e.open&amp;&amp;\&quot;SUMMARY\&quot;!=t.tagName)&amp;&amp;(e&amp;&amp;n(e))}return d(t,!!e,n)}})()&quot;}, @escaper=#&lt;URI::RFC2396_Parser:0x056a1890&gt;&gt;, @window=#&lt;Selenium::WebDriver::Window:0x073beaa8 @bridge=#&lt;Selenium::WebDriver::Remote::Bridge:0x07336c98 @http=#&lt;Capybara::Selenium::PersistentClient:0x0733c428 @open_timeout=nil, @read_timeout=nil, @server_url=#&lt;URI::HTTP http://127.0.0.1:9515/&gt;, @proxy=nil, @http=#&lt;Net::HTTP 127.0.0.1:9515 open=true&gt;&gt;, @file_detector=nil, @session_id=&quot;7fa63ebd1724baa0de2ec4d4fb1ee7cd&quot;, @capabilities=#&lt;Selenium::WebDriver::Remote::Capabilities:0x07375290 @capabilities={:timeouts=&gt;{:implicit=&gt;0, :page_load=&gt;300000, :script=&gt;30000}, :browser_name=&gt;&quot;chrome&quot;, :browser_version=&gt;&quot;107.0.5304.106&quot;, :platform_name=&gt;&quot;windows&quot;, :accept_insecure_certs=&gt;false, :page_load_strategy=&gt;&quot;normal&quot;, :set_window_rect=&gt;true, :unhandled_prompt_behavior=&gt;&quot;dismiss and notify&quot;, :strict_file_interactability=&gt;false, &quot;chrome&quot;=&gt;{&quot;chromedriverVersion&quot;=&gt;&quot;106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569})&quot;, &quot;userDataDir&quot;=&gt;&quot;C:\\Users\\WILLIA~1\\AppData\\Local\\Temp\\scoped_dir15668_2057347172&quot;}, &quot;goog:chromeOptions&quot;=&gt;{&quot;debuggerAddress&quot;=&gt;&quot;localhost:57225&quot;}, &quot;networkConnectionEnabled&quot;=&gt;false, &quot;webauthn:extension:credBlob&quot;=&gt;true, &quot;webauthn:extension:largeBlob&quot;=&gt;true, &quot;webauthn:virtualAuthenticators&quot;=&gt;true}&gt;, @browser=:chrome, @manage=#&lt;Selenium::WebDriver::Manager:0x073beb20 ...&gt;, @atoms={:isDisplayed=&gt;&quot;(function(){function d(t,e,n){function r(t){var e=x(t);if(0&lt;e.height&amp;&amp;0&lt;e.width)return!0;if(\&quot;PATH\&quot;==t.tagName.toUpperCase()&amp;&amp;(0&lt;e.height||0&lt;e.width)){var n=window.getComputedStyle(t)[\&quot;stroke-width\&quot;];return!!n&amp;&amp;0&lt;parseInt(n,10)}return\&quot;hidden\&quot;!=window.getComputedStyle(t).overflow&amp;&amp;Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&amp;&amp;r(t)})}function i(t){return C(t)==T.HIDDEN&amp;&amp;Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\&quot;BODY\&quot;==o)return!0;if(\&quot;OPTION\&quot;==o||\&quot;OPTGROUP\&quot;==o){var a=c(t,function(t){return\&quot;SELECT\&quot;==t.tagName.toUpperCase()});return!!a&amp;&amp;d(a,!0,n)}var u=s(t);if(u)return!!u.image&amp;&amp;0&lt;u.rect.width&amp;&amp;0&lt;u.rect.height&amp;&amp;d(u.image,e,n);if(\&quot;INPUT\&quot;==o&amp;&amp;\&quot;hidden\&quot;==t.type.toLowerCase())return!1;if(\&quot;NOSCRIPT\&quot;==o)return!1;var l=window.getComputedStyle(t).visibility;return\&quot;collapse\&quot;!=l&amp;&amp;\&quot;hidden\&quot;!=l&amp;&amp;(!!n(t)&amp;&amp;(!(!e&amp;&amp;0==f(t))&amp;&amp;(!!r(t)&amp;&amp;!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\&quot;inline\&quot;)&amp;&amp;\&quot;contents\&quot;!=n&amp;&amp;(\&quot;absolute\&quot;!=r||\&quot;static\&quot;!=e.position)}var r=window.getComputedStyle(t).position;if(\&quot;fixed\&quot;==r)return i=!0,t==u?null:u;for(var n=D(t);n&amp;&amp;!e(n);)n=D(n);return n}function n(t){var e=t;if(\&quot;visible\&quot;==d)if(t==u&amp;&amp;l)e=l;else if(t==l)return{x:\&quot;visible\&quot;,y:\&quot;visible\&quot;};var n=window.getComputedStyle(e),r={x:n[\&quot;overflow-x\&quot;],y:n[\&quot;overflow-y\&quot;]};return t==u&amp;&amp;(r.x=\&quot;visible\&quot;==r.x?\&quot;auto\&quot;:r.x,r.y=\&quot;visible\&quot;==r.y?\&quot;auto\&quot;:r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\&quot;visible\&quot;!=h.x||\&quot;visible\&quot;!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right&lt;s.left,c=o.bottom&lt;s.top;if(p&amp;&amp;\&quot;hidden\&quot;==h.x||c&amp;&amp;\&quot;hidden\&quot;==h.y)return T.HIDDEN;if(p&amp;&amp;\&quot;visible\&quot;!=h.x||c&amp;&amp;\&quot;visible\&quot;!=h.y){var v=r(f),g=o.right&lt;s.left-v.x,w=o.bottom&lt;s.top-v.y;return g&amp;&amp;\&quot;visible\&quot;!=h.x||w&amp;&amp;\&quot;visible\&quot;!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left&gt;=s.left+s.width,m=o.top&gt;=s.top+s.height;if(N&amp;&amp;\&quot;hidden\&quot;==h.x||m&amp;&amp;\&quot;hidden\&quot;==h.y)return T.HIDDEN;if(N&amp;&amp;\&quot;visible\&quot;!=h.x||m&amp;&amp;\&quot;visible\&quot;!=h.y){if(i){var y=r(f);if(o.left&gt;=u.scrollWidth-y.x||o.right&gt;=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\&quot;HTML\&quot;==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&amp;&amp;(e=Number(n));var r=D(t);return r&amp;&amp;r.nodeType==Node.ELEMENT_NODE&amp;&amp;(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\&quot;,\&quot;);if(\&quot;rect\&quot;==e&amp;&amp;4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\&quot;circle\&quot;==e&amp;&amp;3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\&quot;poly\&quot;==e&amp;&amp;2&lt;n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1&lt;n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\&quot;MAP\&quot;==e;if(!n&amp;&amp;\&quot;AREA\&quot;!=e)return null;var r=n?t:\&quot;MAP\&quot;==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&amp;&amp;r.name&amp;&amp;((i=r.ownerDocument.querySelector(\&quot;*[usemap=&#39;#\&quot;+r.name+\&quot;&#39;]\&quot;))&amp;&amp;(o=x(i),!n&amp;&amp;\&quot;default\&quot;!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&amp;&amp;(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&amp;&amp;e.shadowRoot&amp;&amp;t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0&lt;n.length)return n[n.length-1]}return e}var T={NONE:\&quot;none\&quot;,HIDDEN:\&quot;hidden\&quot;,SCROLL:\&quot;scroll\&quot;};return function i(t,e){function n(t){if(\&quot;none\&quot;==window.getComputedStyle(t).display)return!1;var e=r(t);if(\&quot;function\&quot;==typeof ShadowRoot&amp;&amp;e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&amp;&amp;e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&amp;&amp;e.tagName&amp;&amp;\&quot;DETAILS\&quot;==e.tagName.toUpperCase()&amp;&amp;!e.open&amp;&amp;\&quot;SUMMARY\&quot;!=t.tagName)&amp;&amp;(e&amp;&amp;n(e))}return d(t,!!e,n)}})()&quot;}, @escaper=#&lt;URI::RFC2396_Parser:0x056a1890&gt;&gt;&gt;&gt; (NoMethodError)
+./features/support/hooks.rb:52:in `add_browser_logs&#39;
+./features/support/hooks.rb:25:in `After&#39;</pre>
+
+
+
+
+        
+            
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        
+        $('#g0f0s0').modal();
+        
+        $('#g0f0s1').modal();
+        
+    });
+</script>
+
+
+    <main class="brown lighten-5">
+      <div class="row">
+
+        <div id="overview" class="col s12 brown lighten-5">
+          <div class="row">
+  <div class="col m4 s12">
+    <canvas id="featuresDoughnut" width="400" height="400"></canvas>
+    <table id="metaDataFeatures" class="bordered">
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="col m4 s12">
+    <canvas id="scenariosDoughnut" width="400" height="400"></canvas>
+    <table id="metaDataScenarios" class="bordered">
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="col m4 s12">
+    <table id="metaData" class="bordered">
+      <tbody>
+      <tr><th>Total Time</th><td>8.432s</td></tr>
+      
+          <tr>
+            <th>Project name</th>
+            <td>Test</td>
+          </tr>
+      
+          <tr>
+            <th>Platform</th>
+            <td>Integration</td>
+          </tr>
+      
+          <tr>
+            <th>Report generated</th>
+            <td>2022-11-10 21:48:46 UTC</td>
+          </tr>
+      
+      </tbody>
+    </table>
+  </div>
+</div>
+
+        </div>
+
+        <div id="features" class="col s12 brown lighten-5 white-text">
+          <ul class="featureList collapsible popout" data-collapsible="expandable">
+  
+      
+      <li class="feature broken">
+  <div class="collapsible-header brown lighten-1 waves-effect waves-light">
+    <i class="material-icons">featured_play_list</i>
+    <b>Funcionalidade</b>&nbsp;Fazer o login com usúario e senha&nbsp;(8.432s)
+  </div>
+
+  <div class="collapsible-body brown lighten-4">
+    <div class="collection scenarioList brown">
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s0">
+          <b>Cenario</b> Informar usúario e senha e Fazer login com sucesso&nbsp;(8.432s)
+        </a>
+      
+    </div>
+  </div>
+</li>
+
+  
+</ul>
+
+        </div>
+
+        <div id="summary" class="col s12 brown lighten-5">
+          <table id="summaryTable" class="bordered brown lighten-1 white-text" width="100%">
+  <thead>
+  <tr>
+    <th class="hide-on-small-only">Feature</th>
+    <th>Scenario</th>
+    <th class="hide">Tags</th>
+    <th>Status</th>
+
+
+    
+
+    <th class="hide-on-small-only">Error</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Fazer o login com usúario e senha
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s0">
+  Informar usúario e senha e Fazer login com sucesso
+</td>
+
+<td class="hide">
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      undefined method `logs&#39; for #&lt;Selenium::WebDriver::Manager:0x073beb20 @bridge=#&lt;Selenium::WebDriver::Remote::Bridge:0x07336c98 @http=#&lt;Capybara::Selenium::PersistentClient:0x0733c428 @open_timeout=nil, @read_timeout=nil, @server_url=#&lt;URI::HTTP http://127.0.0.1:9515/&gt;, @proxy=nil, @http=#&lt;Net::HTTP 127.0.0.1:9515 open=true&gt;&gt;, @file_detector=nil, @session_id=&quot;7fa63ebd1724baa0de2ec4d4fb1ee7cd&quot;, @capabilities=#&lt;Selenium::WebDriver::Remote::Capabilities:0x07375290 @capabilities={:timeouts=&gt;{:implicit=&gt;0, :page_load=&gt;300000, :script=&gt;30000}, :browser_name=&gt;&quot;chrome&quot;, :browser_version=&gt;&quot;107.0.5304.106&quot;, :platform_name=&gt;&quot;windows&quot;, :accept_insecure_certs=&gt;false, :page_load_strategy=&gt;&quot;normal&quot;, :set_window_rect=&gt;true, :unhandled_prompt_behavior=&gt;&quot;dismiss and notify&quot;, :strict_file_interactability=&gt;false, &quot;chrome&quot;=&gt;{&quot;chromedriverVersion&quot;=&gt;&quot;106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569})&quot;, &quot;userDataDir&quot;=&gt;&quot;C:\\Users\\WILLIA~1\\AppData\\Local\\Temp\\scoped_dir15668_2057347172&quot;}, &quot;goog:chromeOptions&quot;=&gt;{&quot;debuggerAddress&quot;=&gt;&quot;localhost:57225&quot;}, &quot;networkConnectionEnabled&quot;=&gt;false, &quot;webauthn:extension:credBlob&quot;=&gt;true, &quot;webauthn:extension:largeBlob&quot;=&gt;true, &quot;webauthn:virtualAuthenticators&quot;=&gt;true}&gt;, @browser=:chrome, @manage=#&lt;Selenium::WebDriver::Manager:0x073beb20 ...&gt;, @atoms={:isDisplayed=&gt;&quot;(function(){function d(t,e,n){function r(t){var e=x(t);if(0&lt;e.height&amp;&amp;0&lt;e.width)return!0;if(\&quot;PATH\&quot;==t.tagName.toUpperCase()&amp;&amp;(0&lt;e.height||0&lt;e.width)){var n=window.getComputedStyle(t)[\&quot;stroke-width\&quot;];return!!n&amp;&amp;0&lt;parseInt(n,10)}return\&quot;hidden\&quot;!=window.getComputedStyle(t).overflow&amp;&amp;Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&amp;&amp;r(t)})}function i(t){return C(t)==T.HIDDEN&amp;&amp;Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\&quot;BODY\&quot;==o)return!0;if(\&quot;OPTION\&quot;==o||\&quot;OPTGROUP\&quot;==o){var a=c(t,function(t){return\&quot;SELECT\&quot;==t.tagName.toUpperCase()});return!!a&amp;&amp;d(a,!0,n)}var u=s(t);if(u)return!!u.image&amp;&amp;0&lt;u.rect.width&amp;&amp;0&lt;u.rect.height&amp;&amp;d(u.image,e,n);if(\&quot;INPUT\&quot;==o&amp;&amp;\&quot;hidden\&quot;==t.type.toLowerCase())return!1;if(\&quot;NOSCRIPT\&quot;==o)return!1;var l=window.getComputedStyle(t).visibility;return\&quot;collapse\&quot;!=l&amp;&amp;\&quot;hidden\&quot;!=l&amp;&amp;(!!n(t)&amp;&amp;(!(!e&amp;&amp;0==f(t))&amp;&amp;(!!r(t)&amp;&amp;!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\&quot;inline\&quot;)&amp;&amp;\&quot;contents\&quot;!=n&amp;&amp;(\&quot;absolute\&quot;!=r||\&quot;static\&quot;!=e.position)}var r=window.getComputedStyle(t).position;if(\&quot;fixed\&quot;==r)return i=!0,t==u?null:u;for(var n=D(t);n&amp;&amp;!e(n);)n=D(n);return n}function n(t){var e=t;if(\&quot;visible\&quot;==d)if(t==u&amp;&amp;l)e=l;else if(t==l)return{x:\&quot;visible\&quot;,y:\&quot;visible\&quot;};var n=window.getComputedStyle(e),r={x:n[\&quot;overflow-x\&quot;],y:n[\&quot;overflow-y\&quot;]};return t==u&amp;&amp;(r.x=\&quot;visible\&quot;==r.x?\&quot;auto\&quot;:r.x,r.y=\&quot;visible\&quot;==r.y?\&quot;auto\&quot;:r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\&quot;visible\&quot;!=h.x||\&quot;visible\&quot;!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right&lt;s.left,c=o.bottom&lt;s.top;if(p&amp;&amp;\&quot;hidden\&quot;==h.x||c&amp;&amp;\&quot;hidden\&quot;==h.y)return T.HIDDEN;if(p&amp;&amp;\&quot;visible\&quot;!=h.x||c&amp;&amp;\&quot;visible\&quot;!=h.y){var v=r(f),g=o.right&lt;s.left-v.x,w=o.bottom&lt;s.top-v.y;return g&amp;&amp;\&quot;visible\&quot;!=h.x||w&amp;&amp;\&quot;visible\&quot;!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left&gt;=s.left+s.width,m=o.top&gt;=s.top+s.height;if(N&amp;&amp;\&quot;hidden\&quot;==h.x||m&amp;&amp;\&quot;hidden\&quot;==h.y)return T.HIDDEN;if(N&amp;&amp;\&quot;visible\&quot;!=h.x||m&amp;&amp;\&quot;visible\&quot;!=h.y){if(i){var y=r(f);if(o.left&gt;=u.scrollWidth-y.x||o.right&gt;=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\&quot;HTML\&quot;==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&amp;&amp;(e=Number(n));var r=D(t);return r&amp;&amp;r.nodeType==Node.ELEMENT_NODE&amp;&amp;(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\&quot;,\&quot;);if(\&quot;rect\&quot;==e&amp;&amp;4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\&quot;circle\&quot;==e&amp;&amp;3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\&quot;poly\&quot;==e&amp;&amp;2&lt;n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1&lt;n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\&quot;MAP\&quot;==e;if(!n&amp;&amp;\&quot;AREA\&quot;!=e)return null;var r=n?t:\&quot;MAP\&quot;==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&amp;&amp;r.name&amp;&amp;((i=r.ownerDocument.querySelector(\&quot;*[usemap=&#39;#\&quot;+r.name+\&quot;&#39;]\&quot;))&amp;&amp;(o=x(i),!n&amp;&amp;\&quot;default\&quot;!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&amp;&amp;(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&amp;&amp;e.shadowRoot&amp;&amp;t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0&lt;n.length)return n[n.length-1]}return e}var T={NONE:\&quot;none\&quot;,HIDDEN:\&quot;hidden\&quot;,SCROLL:\&quot;scroll\&quot;};return function i(t,e){function n(t){if(\&quot;none\&quot;==window.getComputedStyle(t).display)return!1;var e=r(t);if(\&quot;function\&quot;==typeof ShadowRoot&amp;&amp;e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&amp;&amp;e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&amp;&amp;e.tagName&amp;&amp;\&quot;DETAILS\&quot;==e.tagName.toUpperCase()&amp;&amp;!e.open&amp;&amp;\&quot;SUMMARY\&quot;!=t.tagName)&amp;&amp;(e&amp;&amp;n(e))}return d(t,!!e,n)}})()&quot;}, @escaper=#&lt;URI::RFC2396_Parser:0x056a1890&gt;&gt;, @window=#&lt;Selenium::WebDriver::Window:0x073beaa8 @bridge=#&lt;Selenium::WebDriver::Remote::Bridge:0x07336c98 @http=#&lt;Capybara::Selenium::PersistentClient:0x0733c428 @open_timeout=nil, @read_timeout=nil, @server_url=#&lt;URI::HTTP http://127.0.0.1:9515/&gt;, @proxy=nil, @http=#&lt;Net::HTTP 127.0.0.1:9515 open=true&gt;&gt;, @file_detector=nil, @session_id=&quot;7fa63ebd1724baa0de2ec4d4fb1ee7cd&quot;, @capabilities=#&lt;Selenium::WebDriver::Remote::Capabilities:0x07375290 @capabilities={:timeouts=&gt;{:implicit=&gt;0, :page_load=&gt;300000, :script=&gt;30000}, :browser_name=&gt;&quot;chrome&quot;, :browser_version=&gt;&quot;107.0.5304.106&quot;, :platform_name=&gt;&quot;windows&quot;, :accept_insecure_certs=&gt;false, :page_load_strategy=&gt;&quot;normal&quot;, :set_window_rect=&gt;true, :unhandled_prompt_behavior=&gt;&quot;dismiss and notify&quot;, :strict_file_interactability=&gt;false, &quot;chrome&quot;=&gt;{&quot;chromedriverVersion&quot;=&gt;&quot;106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569})&quot;, &quot;userDataDir&quot;=&gt;&quot;C:\\Users\\WILLIA~1\\AppData\\Local\\Temp\\scoped_dir15668_2057347172&quot;}, &quot;goog:chromeOptions&quot;=&gt;{&quot;debuggerAddress&quot;=&gt;&quot;localhost:57225&quot;}, &quot;networkConnectionEnabled&quot;=&gt;false, &quot;webauthn:extension:credBlob&quot;=&gt;true, &quot;webauthn:extension:largeBlob&quot;=&gt;true, &quot;webauthn:virtualAuthenticators&quot;=&gt;true}&gt;, @browser=:chrome, @manage=#&lt;Selenium::WebDriver::Manager:0x073beb20 ...&gt;, @atoms={:isDisplayed=&gt;&quot;(function(){function d(t,e,n){function r(t){var e=x(t);if(0&lt;e.height&amp;&amp;0&lt;e.width)return!0;if(\&quot;PATH\&quot;==t.tagName.toUpperCase()&amp;&amp;(0&lt;e.height||0&lt;e.width)){var n=window.getComputedStyle(t)[\&quot;stroke-width\&quot;];return!!n&amp;&amp;0&lt;parseInt(n,10)}return\&quot;hidden\&quot;!=window.getComputedStyle(t).overflow&amp;&amp;Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&amp;&amp;r(t)})}function i(t){return C(t)==T.HIDDEN&amp;&amp;Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\&quot;BODY\&quot;==o)return!0;if(\&quot;OPTION\&quot;==o||\&quot;OPTGROUP\&quot;==o){var a=c(t,function(t){return\&quot;SELECT\&quot;==t.tagName.toUpperCase()});return!!a&amp;&amp;d(a,!0,n)}var u=s(t);if(u)return!!u.image&amp;&amp;0&lt;u.rect.width&amp;&amp;0&lt;u.rect.height&amp;&amp;d(u.image,e,n);if(\&quot;INPUT\&quot;==o&amp;&amp;\&quot;hidden\&quot;==t.type.toLowerCase())return!1;if(\&quot;NOSCRIPT\&quot;==o)return!1;var l=window.getComputedStyle(t).visibility;return\&quot;collapse\&quot;!=l&amp;&amp;\&quot;hidden\&quot;!=l&amp;&amp;(!!n(t)&amp;&amp;(!(!e&amp;&amp;0==f(t))&amp;&amp;(!!r(t)&amp;&amp;!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\&quot;inline\&quot;)&amp;&amp;\&quot;contents\&quot;!=n&amp;&amp;(\&quot;absolute\&quot;!=r||\&quot;static\&quot;!=e.position)}var r=window.getComputedStyle(t).position;if(\&quot;fixed\&quot;==r)return i=!0,t==u?null:u;for(var n=D(t);n&amp;&amp;!e(n);)n=D(n);return n}function n(t){var e=t;if(\&quot;visible\&quot;==d)if(t==u&amp;&amp;l)e=l;else if(t==l)return{x:\&quot;visible\&quot;,y:\&quot;visible\&quot;};var n=window.getComputedStyle(e),r={x:n[\&quot;overflow-x\&quot;],y:n[\&quot;overflow-y\&quot;]};return t==u&amp;&amp;(r.x=\&quot;visible\&quot;==r.x?\&quot;auto\&quot;:r.x,r.y=\&quot;visible\&quot;==r.y?\&quot;auto\&quot;:r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\&quot;visible\&quot;!=h.x||\&quot;visible\&quot;!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right&lt;s.left,c=o.bottom&lt;s.top;if(p&amp;&amp;\&quot;hidden\&quot;==h.x||c&amp;&amp;\&quot;hidden\&quot;==h.y)return T.HIDDEN;if(p&amp;&amp;\&quot;visible\&quot;!=h.x||c&amp;&amp;\&quot;visible\&quot;!=h.y){var v=r(f),g=o.right&lt;s.left-v.x,w=o.bottom&lt;s.top-v.y;return g&amp;&amp;\&quot;visible\&quot;!=h.x||w&amp;&amp;\&quot;visible\&quot;!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left&gt;=s.left+s.width,m=o.top&gt;=s.top+s.height;if(N&amp;&amp;\&quot;hidden\&quot;==h.x||m&amp;&amp;\&quot;hidden\&quot;==h.y)return T.HIDDEN;if(N&amp;&amp;\&quot;visible\&quot;!=h.x||m&amp;&amp;\&quot;visible\&quot;!=h.y){if(i){var y=r(f);if(o.left&gt;=u.scrollWidth-y.x||o.right&gt;=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\&quot;HTML\&quot;==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&amp;&amp;(e=Number(n));var r=D(t);return r&amp;&amp;r.nodeType==Node.ELEMENT_NODE&amp;&amp;(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\&quot;,\&quot;);if(\&quot;rect\&quot;==e&amp;&amp;4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\&quot;circle\&quot;==e&amp;&amp;3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\&quot;poly\&quot;==e&amp;&amp;2&lt;n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1&lt;n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\&quot;MAP\&quot;==e;if(!n&amp;&amp;\&quot;AREA\&quot;!=e)return null;var r=n?t:\&quot;MAP\&quot;==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&amp;&amp;r.name&amp;&amp;((i=r.ownerDocument.querySelector(\&quot;*[usemap=&#39;#\&quot;+r.name+\&quot;&#39;]\&quot;))&amp;&amp;(o=x(i),!n&amp;&amp;\&quot;default\&quot;!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&amp;&amp;(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&amp;&amp;e.shadowRoot&amp;&amp;t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0&lt;n.length)return n[n.length-1]}return e}var T={NONE:\&quot;none\&quot;,HIDDEN:\&quot;hidden\&quot;,SCROLL:\&quot;scroll\&quot;};return function i(t,e){function n(t){if(\&quot;none\&quot;==window.getComputedStyle(t).display)return!1;var e=r(t);if(\&quot;function\&quot;==typeof ShadowRoot&amp;&amp;e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&amp;&amp;e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&amp;&amp;e.tagName&amp;&amp;\&quot;DETAILS\&quot;==e.tagName.toUpperCase()&amp;&amp;!e.open&amp;&amp;\&quot;SUMMARY\&quot;!=t.tagName)&amp;&amp;(e&amp;&amp;n(e))}return d(t,!!e,n)}})()&quot;}, @escaper=#&lt;URI::RFC2396_Parser:0x056a1890&gt;&gt;&gt;&gt; (NoMethodError)
+  
+</td>
+
+          </tr>
+      
+  
+  </tbody>
+</table>
+
+        </div>
+
+        <div id="errors" class="col s12 brown lighten-5">
+          <ul class="errorList collapsible popout" data-collapsible="expandable">
+  
+      <li class="error">
+  <div class="collapsible-header red lighten-2 white-text waves-effect waves-light">
+    <i class="material-icons">bug_report</i>Unable to find css &quot;input[value=\&quot;ENTRAR1\&quot;]&quot; (Capybara::ElementNotFound)
+  </div>
+
+  <div class="collapsible-body brown lighten-4">
+    <div class="collection failedScenarioList">
+      
+          
+              
+                  
+              
+          
+      
+    </div>
+  </div>
+</li>
+
+  
+      <li class="error">
+  <div class="collapsible-header red lighten-2 white-text waves-effect waves-light">
+    <i class="material-icons">bug_report</i>undefined method `logs&#39; for #&lt;Selenium::WebDriver::Manager:0x073beb20 @bridge=#&lt;Selenium::WebDriver::Remote::Bridge:0x07336c98 @http=#&lt;Capybara::Selenium::PersistentClient:0x0733c428 @open_timeout=nil, @read_timeout=nil, @server_url=#&lt;URI::HTTP http://127.0.0.1:9515/&gt;, @proxy=nil, @http=#&lt;Net::HTTP 127.0.0.1:9515 open=true&gt;&gt;, @file_detector=nil, @session_id=&quot;7fa63ebd1724baa0de2ec4d4fb1ee7cd&quot;, @capabilities=#&lt;Selenium::WebDriver::Remote::Capabilities:0x07375290 @capabilities={:timeouts=&gt;{:implicit=&gt;0, :page_load=&gt;300000, :script=&gt;30000}, :browser_name=&gt;&quot;chrome&quot;, :browser_version=&gt;&quot;107.0.5304.106&quot;, :platform_name=&gt;&quot;windows&quot;, :accept_insecure_certs=&gt;false, :page_load_strategy=&gt;&quot;normal&quot;, :set_window_rect=&gt;true, :unhandled_prompt_behavior=&gt;&quot;dismiss and notify&quot;, :strict_file_interactability=&gt;false, &quot;chrome&quot;=&gt;{&quot;chromedriverVersion&quot;=&gt;&quot;106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569})&quot;, &quot;userDataDir&quot;=&gt;&quot;C:\\Users\\WILLIA~1\\AppData\\Local\\Temp\\scoped_dir15668_2057347172&quot;}, &quot;goog:chromeOptions&quot;=&gt;{&quot;debuggerAddress&quot;=&gt;&quot;localhost:57225&quot;}, &quot;networkConnectionEnabled&quot;=&gt;false, &quot;webauthn:extension:credBlob&quot;=&gt;true, &quot;webauthn:extension:largeBlob&quot;=&gt;true, &quot;webauthn:virtualAuthenticators&quot;=&gt;true}&gt;, @browser=:chrome, @manage=#&lt;Selenium::WebDriver::Manager:0x073beb20 ...&gt;, @atoms={:isDisplayed=&gt;&quot;(function(){function d(t,e,n){function r(t){var e=x(t);if(0&lt;e.height&amp;&amp;0&lt;e.width)return!0;if(\&quot;PATH\&quot;==t.tagName.toUpperCase()&amp;&amp;(0&lt;e.height||0&lt;e.width)){var n=window.getComputedStyle(t)[\&quot;stroke-width\&quot;];return!!n&amp;&amp;0&lt;parseInt(n,10)}return\&quot;hidden\&quot;!=window.getComputedStyle(t).overflow&amp;&amp;Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&amp;&amp;r(t)})}function i(t){return C(t)==T.HIDDEN&amp;&amp;Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\&quot;BODY\&quot;==o)return!0;if(\&quot;OPTION\&quot;==o||\&quot;OPTGROUP\&quot;==o){var a=c(t,function(t){return\&quot;SELECT\&quot;==t.tagName.toUpperCase()});return!!a&amp;&amp;d(a,!0,n)}var u=s(t);if(u)return!!u.image&amp;&amp;0&lt;u.rect.width&amp;&amp;0&lt;u.rect.height&amp;&amp;d(u.image,e,n);if(\&quot;INPUT\&quot;==o&amp;&amp;\&quot;hidden\&quot;==t.type.toLowerCase())return!1;if(\&quot;NOSCRIPT\&quot;==o)return!1;var l=window.getComputedStyle(t).visibility;return\&quot;collapse\&quot;!=l&amp;&amp;\&quot;hidden\&quot;!=l&amp;&amp;(!!n(t)&amp;&amp;(!(!e&amp;&amp;0==f(t))&amp;&amp;(!!r(t)&amp;&amp;!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\&quot;inline\&quot;)&amp;&amp;\&quot;contents\&quot;!=n&amp;&amp;(\&quot;absolute\&quot;!=r||\&quot;static\&quot;!=e.position)}var r=window.getComputedStyle(t).position;if(\&quot;fixed\&quot;==r)return i=!0,t==u?null:u;for(var n=D(t);n&amp;&amp;!e(n);)n=D(n);return n}function n(t){var e=t;if(\&quot;visible\&quot;==d)if(t==u&amp;&amp;l)e=l;else if(t==l)return{x:\&quot;visible\&quot;,y:\&quot;visible\&quot;};var n=window.getComputedStyle(e),r={x:n[\&quot;overflow-x\&quot;],y:n[\&quot;overflow-y\&quot;]};return t==u&amp;&amp;(r.x=\&quot;visible\&quot;==r.x?\&quot;auto\&quot;:r.x,r.y=\&quot;visible\&quot;==r.y?\&quot;auto\&quot;:r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\&quot;visible\&quot;!=h.x||\&quot;visible\&quot;!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right&lt;s.left,c=o.bottom&lt;s.top;if(p&amp;&amp;\&quot;hidden\&quot;==h.x||c&amp;&amp;\&quot;hidden\&quot;==h.y)return T.HIDDEN;if(p&amp;&amp;\&quot;visible\&quot;!=h.x||c&amp;&amp;\&quot;visible\&quot;!=h.y){var v=r(f),g=o.right&lt;s.left-v.x,w=o.bottom&lt;s.top-v.y;return g&amp;&amp;\&quot;visible\&quot;!=h.x||w&amp;&amp;\&quot;visible\&quot;!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left&gt;=s.left+s.width,m=o.top&gt;=s.top+s.height;if(N&amp;&amp;\&quot;hidden\&quot;==h.x||m&amp;&amp;\&quot;hidden\&quot;==h.y)return T.HIDDEN;if(N&amp;&amp;\&quot;visible\&quot;!=h.x||m&amp;&amp;\&quot;visible\&quot;!=h.y){if(i){var y=r(f);if(o.left&gt;=u.scrollWidth-y.x||o.right&gt;=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\&quot;HTML\&quot;==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&amp;&amp;(e=Number(n));var r=D(t);return r&amp;&amp;r.nodeType==Node.ELEMENT_NODE&amp;&amp;(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\&quot;,\&quot;);if(\&quot;rect\&quot;==e&amp;&amp;4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\&quot;circle\&quot;==e&amp;&amp;3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\&quot;poly\&quot;==e&amp;&amp;2&lt;n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1&lt;n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\&quot;MAP\&quot;==e;if(!n&amp;&amp;\&quot;AREA\&quot;!=e)return null;var r=n?t:\&quot;MAP\&quot;==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&amp;&amp;r.name&amp;&amp;((i=r.ownerDocument.querySelector(\&quot;*[usemap=&#39;#\&quot;+r.name+\&quot;&#39;]\&quot;))&amp;&amp;(o=x(i),!n&amp;&amp;\&quot;default\&quot;!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&amp;&amp;(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&amp;&amp;e.shadowRoot&amp;&amp;t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0&lt;n.length)return n[n.length-1]}return e}var T={NONE:\&quot;none\&quot;,HIDDEN:\&quot;hidden\&quot;,SCROLL:\&quot;scroll\&quot;};return function i(t,e){function n(t){if(\&quot;none\&quot;==window.getComputedStyle(t).display)return!1;var e=r(t);if(\&quot;function\&quot;==typeof ShadowRoot&amp;&amp;e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&amp;&amp;e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&amp;&amp;e.tagName&amp;&amp;\&quot;DETAILS\&quot;==e.tagName.toUpperCase()&amp;&amp;!e.open&amp;&amp;\&quot;SUMMARY\&quot;!=t.tagName)&amp;&amp;(e&amp;&amp;n(e))}return d(t,!!e,n)}})()&quot;}, @escaper=#&lt;URI::RFC2396_Parser:0x056a1890&gt;&gt;, @window=#&lt;Selenium::WebDriver::Window:0x073beaa8 @bridge=#&lt;Selenium::WebDriver::Remote::Bridge:0x07336c98 @http=#&lt;Capybara::Selenium::PersistentClient:0x0733c428 @open_timeout=nil, @read_timeout=nil, @server_url=#&lt;URI::HTTP http://127.0.0.1:9515/&gt;, @proxy=nil, @http=#&lt;Net::HTTP 127.0.0.1:9515 open=true&gt;&gt;, @file_detector=nil, @session_id=&quot;7fa63ebd1724baa0de2ec4d4fb1ee7cd&quot;, @capabilities=#&lt;Selenium::WebDriver::Remote::Capabilities:0x07375290 @capabilities={:timeouts=&gt;{:implicit=&gt;0, :page_load=&gt;300000, :script=&gt;30000}, :browser_name=&gt;&quot;chrome&quot;, :browser_version=&gt;&quot;107.0.5304.106&quot;, :platform_name=&gt;&quot;windows&quot;, :accept_insecure_certs=&gt;false, :page_load_strategy=&gt;&quot;normal&quot;, :set_window_rect=&gt;true, :unhandled_prompt_behavior=&gt;&quot;dismiss and notify&quot;, :strict_file_interactability=&gt;false, &quot;chrome&quot;=&gt;{&quot;chromedriverVersion&quot;=&gt;&quot;106.0.5249.61 (511755355844955cd3e264779baf0dd38212a4d0-refs/branch-heads/5249@{#569})&quot;, &quot;userDataDir&quot;=&gt;&quot;C:\\Users\\WILLIA~1\\AppData\\Local\\Temp\\scoped_dir15668_2057347172&quot;}, &quot;goog:chromeOptions&quot;=&gt;{&quot;debuggerAddress&quot;=&gt;&quot;localhost:57225&quot;}, &quot;networkConnectionEnabled&quot;=&gt;false, &quot;webauthn:extension:credBlob&quot;=&gt;true, &quot;webauthn:extension:largeBlob&quot;=&gt;true, &quot;webauthn:virtualAuthenticators&quot;=&gt;true}&gt;, @browser=:chrome, @manage=#&lt;Selenium::WebDriver::Manager:0x073beb20 ...&gt;, @atoms={:isDisplayed=&gt;&quot;(function(){function d(t,e,n){function r(t){var e=x(t);if(0&lt;e.height&amp;&amp;0&lt;e.width)return!0;if(\&quot;PATH\&quot;==t.tagName.toUpperCase()&amp;&amp;(0&lt;e.height||0&lt;e.width)){var n=window.getComputedStyle(t)[\&quot;stroke-width\&quot;];return!!n&amp;&amp;0&lt;parseInt(n,10)}return\&quot;hidden\&quot;!=window.getComputedStyle(t).overflow&amp;&amp;Array.prototype.slice.call(t.childNodes).some(function(t){return t.nodeType==Node.TEXT_NODE||t.nodeType==Node.ELEMENT_NODE&amp;&amp;r(t)})}function i(t){return C(t)==T.HIDDEN&amp;&amp;Array.prototype.slice.call(t.childNodes).every(function(t){return t.nodeType!=Node.ELEMENT_NODE||i(t)||!r(t)})}var o=t.tagName.toUpperCase();if(\&quot;BODY\&quot;==o)return!0;if(\&quot;OPTION\&quot;==o||\&quot;OPTGROUP\&quot;==o){var a=c(t,function(t){return\&quot;SELECT\&quot;==t.tagName.toUpperCase()});return!!a&amp;&amp;d(a,!0,n)}var u=s(t);if(u)return!!u.image&amp;&amp;0&lt;u.rect.width&amp;&amp;0&lt;u.rect.height&amp;&amp;d(u.image,e,n);if(\&quot;INPUT\&quot;==o&amp;&amp;\&quot;hidden\&quot;==t.type.toLowerCase())return!1;if(\&quot;NOSCRIPT\&quot;==o)return!1;var l=window.getComputedStyle(t).visibility;return\&quot;collapse\&quot;!=l&amp;&amp;\&quot;hidden\&quot;!=l&amp;&amp;(!!n(t)&amp;&amp;(!(!e&amp;&amp;0==f(t))&amp;&amp;(!!r(t)&amp;&amp;!i(t))))}function E(t){var e=x(t);return{left:e.left,right:e.left+e.width,top:e.top,bottom:e.top+e.height}}function D(t){return t.parentElement}function C(t){function e(t){function e(t){if(t==u)return!0;var e=window.getComputedStyle(t),n=e.display;return 0!=n.indexOf(\&quot;inline\&quot;)&amp;&amp;\&quot;contents\&quot;!=n&amp;&amp;(\&quot;absolute\&quot;!=r||\&quot;static\&quot;!=e.position)}var r=window.getComputedStyle(t).position;if(\&quot;fixed\&quot;==r)return i=!0,t==u?null:u;for(var n=D(t);n&amp;&amp;!e(n);)n=D(n);return n}function n(t){var e=t;if(\&quot;visible\&quot;==d)if(t==u&amp;&amp;l)e=l;else if(t==l)return{x:\&quot;visible\&quot;,y:\&quot;visible\&quot;};var n=window.getComputedStyle(e),r={x:n[\&quot;overflow-x\&quot;],y:n[\&quot;overflow-y\&quot;]};return t==u&amp;&amp;(r.x=\&quot;visible\&quot;==r.x?\&quot;auto\&quot;:r.x,r.y=\&quot;visible\&quot;==r.y?\&quot;auto\&quot;:r.y),r}function r(t){return t==u?{x:window.scrollX,y:window.scrollY}:{x:t.scrollLeft,y:t.scrollTop}}for(var i,o=E(t),a=t.ownerDocument,u=a.documentElement,l=a.body,d=window.getComputedStyle(u).overflow,f=e(t);f;f=e(f)){var h=n(f);if(\&quot;visible\&quot;!=h.x||\&quot;visible\&quot;!=h.y){var s=x(f);if(0==s.width||0==s.height)return T.HIDDEN;var p=o.right&lt;s.left,c=o.bottom&lt;s.top;if(p&amp;&amp;\&quot;hidden\&quot;==h.x||c&amp;&amp;\&quot;hidden\&quot;==h.y)return T.HIDDEN;if(p&amp;&amp;\&quot;visible\&quot;!=h.x||c&amp;&amp;\&quot;visible\&quot;!=h.y){var v=r(f),g=o.right&lt;s.left-v.x,w=o.bottom&lt;s.top-v.y;return g&amp;&amp;\&quot;visible\&quot;!=h.x||w&amp;&amp;\&quot;visible\&quot;!=h.x?T.HIDDEN:C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}var N=o.left&gt;=s.left+s.width,m=o.top&gt;=s.top+s.height;if(N&amp;&amp;\&quot;hidden\&quot;==h.x||m&amp;&amp;\&quot;hidden\&quot;==h.y)return T.HIDDEN;if(N&amp;&amp;\&quot;visible\&quot;!=h.x||m&amp;&amp;\&quot;visible\&quot;!=h.y){if(i){var y=r(f);if(o.left&gt;=u.scrollWidth-y.x||o.right&gt;=u.scrollHeight-y.y)return T.HIDDEN}return C(f)==T.HIDDEN?T.HIDDEN:T.SCROLL}}}return T.NONE}function o(t){var e=t.document.documentElement;return{width:e.clientWidth,height:e.clientHeight}}function p(t,e,n,r){return{left:t,top:e,width:n,height:r}}function x(t){var e,n=s(t);if(n)return n.rect;if(\&quot;HTML\&quot;==t.tagName.toUpperCase()){t.ownerDocument;var r=o(window);return p(0,0,r.width,r.height)}try{e=t.getBoundingClientRect()}catch(i){return p(0,0,0,0)}return p(e.left,e.top,e.right-e.left,e.bottom-e.top)}function f(t){var e=1,n=window.getComputedStyle(t).opacity;n&amp;&amp;(e=Number(n));var r=D(t);return r&amp;&amp;r.nodeType==Node.ELEMENT_NODE&amp;&amp;(e*=f(r)),e}function h(t){var e=t.shape.toLowerCase(),n=t.coords.split(\&quot;,\&quot;);if(\&quot;rect\&quot;==e&amp;&amp;4==n.length){var r=n[0],i=n[1];return p(r,i,n[2]-r,n[3]-i)}if(\&quot;circle\&quot;==e&amp;&amp;3==n.length){var o=n[0],a=n[1],u=n[2];return p(o-u,a-u,2*u,2*u)}if(\&quot;poly\&quot;==e&amp;&amp;2&lt;n.length){for(var l=n[0],d=n[1],f=l,h=d,s=2;s+1&lt;n.length;s+=2)l=Math.min(l,n[s]),f=Math.max(f,n[s]),d=Math.min(d,n[s+1]),h=Math.max(h,n[s+1]);return p(l,d,f-l,h-d)}return p(0,0,0,0)}function s(t){var e=t.tagName.toUpperCase(),n=\&quot;MAP\&quot;==e;if(!n&amp;&amp;\&quot;AREA\&quot;!=e)return null;var r=n?t:\&quot;MAP\&quot;==D(t).tagName.toUpperCase()?D(t):null,i=null,o=null;if(r&amp;&amp;r.name&amp;&amp;((i=r.ownerDocument.querySelector(\&quot;*[usemap=&#39;#\&quot;+r.name+\&quot;&#39;]\&quot;))&amp;&amp;(o=x(i),!n&amp;&amp;\&quot;default\&quot;!=t.shape.toLowerCase()))){var a=h(t),u=Math.min(Math.max(a.left,0),o.width),l=Math.min(Math.max(a.top,0),o.height),d=Math.min(a.width,o.width-u),f=Math.min(a.height,o.height-l);o=p(u+o.left,l+o.top,d,f)}return{image:i,rect:o||p(0,0,0,0)}}function c(t,e){for(t&amp;&amp;(t=D(t));t;){if(e(t))return t;t=D(t)}return null}function r(t){var e=t.parentNode;if(e&amp;&amp;e.shadowRoot&amp;&amp;t.assignedSlot!==undefined)return t.assignedSlot?t.assignedSlot.parentNode:null;if(t.getDestinationInsertionPoints){var n=t.getDestinationInsertionPoints();if(0&lt;n.length)return n[n.length-1]}return e}var T={NONE:\&quot;none\&quot;,HIDDEN:\&quot;hidden\&quot;,SCROLL:\&quot;scroll\&quot;};return function i(t,e){function n(t){if(\&quot;none\&quot;==window.getComputedStyle(t).display)return!1;var e=r(t);if(\&quot;function\&quot;==typeof ShadowRoot&amp;&amp;e instanceof ShadowRoot){if(e.host.shadowRoot!==e)return!1;e=e.host}return!(!e||e.nodeType!=Node.DOCUMENT_NODE&amp;&amp;e.nodeType!=Node.DOCUMENT_FRAGMENT_NODE)||!(e&amp;&amp;e.tagName&amp;&amp;\&quot;DETAILS\&quot;==e.tagName.toUpperCase()&amp;&amp;!e.open&amp;&amp;\&quot;SUMMARY\&quot;!=t.tagName)&amp;&amp;(e&amp;&amp;n(e))}return d(t,!!e,n)}})()&quot;}, @escaper=#&lt;URI::RFC2396_Parser:0x056a1890&gt;&gt;&gt;&gt; (NoMethodError)
+  </div>
+
+  <div class="collapsible-body brown lighten-4">
+    <div class="collection failedScenarioList">
+      
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s0">
+                        <i class="material-icons">highlight_off</i>&nbsp;Informar usúario e senha e Fazer login com sucesso
+                      </a>
+                  
+              
+          
+      
+    </div>
+  </div>
+</li>
+
+  
+</ul>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer brown lighten-4">
+  <div class="footer-copyright brown lighten-1">
+    <div class="container">
+      Happy Reporting!
+      <a class="white-text text-lighten-4 right" href="https://reportbuilder.rajatthareja.com">Generated by Report Builder</a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.9/js/report.builder.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
